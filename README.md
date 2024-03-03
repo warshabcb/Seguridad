@@ -56,6 +56,14 @@ Notas Generales
   ```
   nmap -sS <target>
   ```
+- Usa -f o --mtu para la fragmentación de paquetes y combínalo con un escaneo SYN -sS para un escaneo más sigiloso:
+  ```
+  nmap -sS -f <target>
+  ```
+  O especifica un MTU personalizado que debe ser un múltiplo de 8:
+  ```
+  nmap -sS --mtu 24 <target>
+  ```
 - El Nmap Scripting Engine (NSE) es extremadamente poderoso para realizar una variedad de tareas, desde la detección avanzada hasta la explotación y la auditoría de seguridad:
   ```
   nmap --script=<category> <target>
