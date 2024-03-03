@@ -32,4 +32,5 @@ Notas Generales
   nmap -oN output.nmap <target>  # Salida en formato normal
   nmap -oG output.gnmap <target>  # Salida en formato grepable
   ```
+- Para realizar un escaneo más sigiloso, puedes combinar varias técnicas de evasión: ``` nmap -Pn -sS -T2 -f <target> ``` Este comando no hace ping al host (-Pn), utiliza un escaneo SYN (-sS), baja la velocidad del escaneo para ser menos detectable (-T2), y fragmenta los paquetes (-f).
     
