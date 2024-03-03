@@ -6,6 +6,11 @@ Notas Generales
 
 ### Nmap
 
+
+- Para escanear todas las IPs en una subred.
+  ```
+  nmap -sn <subnet>/24
+  ```
 - Escaneo de ping: Verifica si los hosts están activos. 
   ```
   nmap -sn <target>
@@ -80,8 +85,5 @@ Notas Generales
   nmap -Pn -sS -T2 -f <target>
   ```
   Este comando no hace ping al host (-Pn), utiliza un escaneo SYN (-sS), baja la velocidad del escaneo para ser menos detectable (-T2), y fragmenta los paquetes (-f).
-- Para escanear todas las IPs en una subred.
-  ```
-  nmap -sn <subnet>/24
-  ```
+
     
