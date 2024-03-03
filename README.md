@@ -23,8 +23,13 @@ Notas Generales
   nmap -f <target>  # Fragmentación de paquetes
   nmap -T4 <target>  # Ajusta la velocidad del escaneo (0 es más lento, 5 es más rápido)
   ```
-  - El escaneo SYN (-sS) es menos intrusivo y más difícil de detectar que un escaneo de conect completo: ``` nmap -sS <target> ```
-  - El Nmap Scripting Engine (NSE) es extremadamente poderoso para realizar una variedad de tareas, desde la detección avanzada hasta la explotación y la auditoría de seguridad:
-    ``` nmap --script=<category> <target> ``` Puedes especificar categorías como ```default```, ```safe```, ```vuln```, ```exploit```, entre otras.
-
+- El escaneo SYN (-sS) es menos intrusivo y más difícil de detectar que un escaneo de conect completo: ``` nmap -sS <target> ```
+- El Nmap Scripting Engine (NSE) es extremadamente poderoso para realizar una variedad de tareas, desde la detección avanzada hasta la explotación y la auditoría de seguridad:
+  ``` nmap --script=<category> <target> ``` Puedes especificar categorías como ```default```, ```safe```, ```vuln```, ```exploit```, entre otras.
+- Nmap puede generar resultados en varios formatos, útiles para el análisis posterior o la integración con otras herramientas:
+  ```
+  nmap -oX output.xml <target>  # Salida en XML
+  nmap -oN output.nmap <target>  # Salida en formato normal
+  nmap -oG output.gnmap <target>  # Salida en formato grepable
+  ```
     
