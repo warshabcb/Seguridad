@@ -18,9 +18,18 @@ Notas Generales
   ```
   nmap -p 22,80,443 <target>
   ```
+- Utiliza -F para realizar un escaneo rápido de los 100 puertos más comunes. Combínalo con -T4 para acelerar el escaneo:
+  ```
+  nmap -F -T4 <target>
+  ```
 - Descubre qué servicios se están ejecutando en los puertos abiertos.
   ```
   nmap -sV <target>
+  ```
+- Combina la detección de servicios -sV con la opción de intensidad --version-intensity para controlar la profundidad de la detección de la versión del servicio | Un valor de 5 es el predeterminado, pero puede ir de 0 (ligero) a 9 (intenso) para ajustar la profundidad 
+  del escaneo.
+  ```
+  nmap -sV --version-intensity 5 <target>
   ```
 - Intenta identificar el sistema operativo del host.
   ```
