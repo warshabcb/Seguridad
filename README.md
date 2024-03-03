@@ -6,7 +6,7 @@ Notas Generales
 
 ### Nmap
 
-- Escaneo de ping: Verifica si los hosts están activos.
+- Escaneo de ping: Verifica si los hosts están activos. 
   ``` nmap -sn <target> ```
 - Escaneo de puertos: Identifica puertos abiertos en los hosts.
   ``` nmap -p 1-65535 <target> ```
