@@ -25,6 +25,6 @@ Notas Generales
   ```
   - El escaneo SYN (-sS) es menos intrusivo y más difícil de detectar que un escaneo de conect completo: ``` nmap -sS <target> ```
   - El Nmap Scripting Engine (NSE) es extremadamente poderoso para realizar una variedad de tareas, desde la detección avanzada hasta la explotación y la auditoría de seguridad:
-    ``` nmap --script=<category> <target> ``` Puedes especificar categorías como default, safe, vuln, exploit, entre otras.
+    ``` nmap --script=<category> <target> ``` Puedes especificar categorías como ```default```, ```safe```, ```vuln```, ```exploit```, entre otras.
 
     
